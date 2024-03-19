@@ -112,28 +112,6 @@
         </div>
 
 
-            
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    Mip-NeRF
-                </h3>
-                <p class="text-justify">
-                    We use integrated positional encoding to train NeRF to generate anti-aliased renderings. Rather than casting an infinitesimal ray through each pixel, we instead cast a full 3D <em>cone</em>. For each queried point along a ray, we consider its associated 3D conical frustum. Two different cameras viewing the same point in space may result in vastly different conical frustums, as illustrated here in 2D:
-                </p>
-                <p style="text-align:center;">
-                    <image src="img/scales_toy.png" class="img-responsive" alt="scales">
-                </p>
-                <p class="text-justify">
-                    In order to pass this information through the NeRF network, we fit a multivariate Gaussian to the conical frustum and use the integrated positional encoding described above to create the input feature vector to the network. 
-                </p>
-            </div>
-        </div>
-            
-
-
-  
-
         
         <!-- Citation -->
         <div class="row">
@@ -142,16 +120,14 @@
                     Citation
                 </h3>
                 <div class="form-group col-md-10 col-md-offset-1">
-                    <!-- <textarea id="bibtex" class="form-control" readonly> -->
-                    <code>
-                        @inproceedings{liu2024finer,
-                            title     = {FINER: Flexible spectral-bias tuning in Implicit NEural Representation by Variable-periodic Activation Functions},
-                            author    = {Liu, Zhen and Zhu, Hao and Zhang, Qi and Fu, Jingde and Deng, Weibing and Ma, Zhan and Guo, Yanwen and Cao, Xun},
-                            booktitle = {Proceedings of the IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
-                            year      = {2024}
-                        }
-                    </code>
-                    <!-- </textarea> -->
+                    <pre><code>
+@inproceedings{liu2024finer,
+    title = {FINER: Flexible spectral-bias tuning in Implicit NEural Representation by Variable-periodic Activation Functions},
+    author = {Liu, Zhen and Zhu, Hao and Zhang, Qi and Fu, Jingde and Deng, Weibing and Ma, Zhan and Guo, Yanwen and Cao, Xun},
+    booktitle = {Proceedings of the IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)},
+    year = {2024}
+}
+                    </code></pre>
                 </div>
             </div>
         </div>

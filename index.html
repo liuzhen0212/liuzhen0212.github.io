@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Zhen Liu</title>
+    <meta name="author" content="Zhen Liu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px"><td style="padding:0px">
+
+        <!-- First Part: Brief introduction -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p class="name" style="text-align: center;">
+                <b> Zhen Liu </b>
+              </p>
+              <p style="text-align:justify">
+                I'm a PhD student at <a href="https://cite.nju.edu.cn/">Nanjing University</a>, 
+                and supervised by <a href="https://cite.nju.edu.cn/People/Faculty/20190621/i5054.html">Prof. Xun Cao</a> 
+                and <a href="https://cs.nju.edu.cn/ywguo/index.htm">Prof. Yanwen Guo</a>.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:zhenliu@smail.nju.edu.cn">Email</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.co.kr/citations?user=d-S9cjIAAAAJ&hl=zh-CN">Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/liuzhen0212">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/ZhenLiu.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/ZhenLiu.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <!-- Second Part: Research introduction -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+              <p>
+                I'm interested in Implicit Neural Representation, Neural Radiance Fields and Computational Imaging.
+                Representative papers are <span class="highlight">highlighted</span>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+          
+        <!-- Third Part: Works -->
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <!-- FINER -->
+          <tr onmouseout="finer_stop()" onmouseover="finer_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='finer_image'>
+                  <video width=100% height=100% muted autoplay loop>
+                    <source src="images/zipnerf.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <img src='images/zipnerf.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function finer_stop() {
+                  document.getElementById('finer_image').style.opacity = "1";
+                }
+                function finer_start() {
+                  document.getElementById('finer_image').style.opacity = "0";
+                }
+                finer_stop()
+              </script>
+            </td>
+            
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="Todo"> 
+                <!-- TODO -->
+                <span class="papertitle">FINER: Flexible spectral-bias tuning in Implicit NEural Representation by Variable-periodic Activation Functions</span>
+              </a>
+              <br>
+              <strong>Zhen Liu</strong>,
+              <!-- <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a> -->
+              <br>
+              <em>CVPR</em>, 2024 &nbsp 
+              <!-- <font color="red"><strong>(Oral Presentation, Best Paper Finalist)</strong></font> -->
+              <br>
+              <a href="https://liuzhen0212.github.io/finer">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+              <p></p>
+              <p>
+                Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+          
+      </td></tr>
+    </table>
+  </body>
+</html>
